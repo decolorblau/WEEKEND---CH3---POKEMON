@@ -1,0 +1,28 @@
+{
+  "name": "challenge3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decolorblau/W3-CH3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decolorblau/W3-CH3/issues"
+  },
+  "homepage": "https://github.com/decolorblau/W3-CH3#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^27.2.5"
+  }
+}
