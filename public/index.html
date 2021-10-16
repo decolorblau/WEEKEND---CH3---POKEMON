@@ -11,6 +11,7 @@
     <div class="container">
       <header>
         <h1>POKEMON</h1>
+        <img src="/public/image/pokemon-logo.svg" alt="pokemon logo">
         <nav>
           <ul class="navigator">
             <li class="universo">Universo Pokemon</li>
@@ -19,28 +20,34 @@
         </nav>
       </header>
       <main>
-        <div class="list">
-          <ul>
-            <li>
-              <div class="card">
-                <section class="card__header">
-                  <div class="card__id">
-                    <p>id</p>
-                  </div>
-                  <div class="card__name">
-                    <p>Name</p>
-                  </div>
-                </section>
-                <section class="card__image">
-                  <img src="" alt="pokemon-name" />
-                </section>
-                <button>
-                  <img src="" alt="pokeball" />
-                  CATCH POKEMON
-                </button>
-              </div>
-            </li>
-          </ul>
+        <div>
+          <div class="search">
+            <input type="text" class="search__text">
+            <button type="submit" class="search__button">search</button>
+          </div>
+          <div class="list">
+            <ul class="list-cards">
+              <li>
+                <div class="card">
+                  <section class="card__header">
+                    <div class="card__id">
+                      <span>801</span>
+                    </div>
+                    <div class="card__name">
+                      <p>Name</p>
+                    </div>
+                  </section>
+                  <section class="card__image">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokemon-name" />
+                  </section>
+                  <button>
+                    <img src="/public/image/pokeball.svg" alt="pokeball" />
+                    CATCH POKEMON
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </main>   
   </body>
