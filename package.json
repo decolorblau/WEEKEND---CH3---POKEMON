@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass src/style.scss public/style.css",
-    "sass-dev": "sass --watch src/style.scss public/style.css"
+    "sass-dev": "sass --watch src/style.scss public/style.css",
     "test": "jest --watchAll --collect-coverage"
   },
   "repository": {
