@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POKEMON</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>POKEMON</h1>
         <img src="/public/image/pokemon-logo.svg" alt="pokemon logo">
-        <nav>
+      </header>
+      <nav>
           <ul class="navigator">
-            <li class="universo">Universo Pokemon</li>
+            <li class="universo">Pokédex</li>
             <li class="universo">My Pokemon Family</li>
           </ul>
         </nav>
-      </header>
       <main>
         <div>
           <div class="search">
@@ -31,41 +31,22 @@
                 <div class="card">
                   <section class="card__header">
                     <div class="card__id">
-                      <span>801</span>
+                      <span>Nº 801</span>
                     </div>
                     <div class="card__name">
-                      <p>Name</p>
+                      <p>Bulbasaur</p>
                     </div>
                   </section>
                   <section class="card__image">
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokemon-name" />
                   </section>
-                  <button>
-                    <img src="/public/image/pokeball.svg" alt="pokeball" />
-                    CATCH POKEMON
-                  </button>
-                </div>
-              </li>
-                            <li class="list-cards__unit">
-                <div class="card">
-                  <section class="card__header">
-                    <div class="card__id">
-                      <span>801</span>
-                    </div>
-                    <div class="card__name">
-                      <p>Name</p>
-                    </div>
-                  </section>
-                  <section class="card__image">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokemon-name" />
-                  </section>
-                  <button>
-                    <img src="/public/image/pokeball.svg" alt="pokeball" />
-                    CATCH POKEMON
-                  </button>
-                </div>
-              </li>
+                  <button class="button">
+                    <img src="/public/image/pokeball.png" alt="pokeball" />
 
+                      CATCH POKEMON
+                  </button>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
