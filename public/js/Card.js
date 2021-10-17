@@ -15,20 +15,17 @@ class Card extends Component {
 
     (async () => {
       this.pokemonUrl = await pokemonUrl;
-      console.log(pokemonUrl);
       const pokemonCardList = new GetServices();
       const responsePokemonCardList = await pokemonCardList.getPokemons(
         this.pokemonUrl
       );
 
-      console.log(responsePokemonCardList);
-
       this.pokemon = responsePokemonCardList;
-      console.log(this.pokemon);
       this.id = responsePokemonCardList.id;
-      console.log(this.id);
 
-      this.pokemonName = responsePokemonCardList.name;
+      const nameLowerCase = responsePokemonCardList.name;
+
+      this.pokemonName = UperCaseFirstLetter(nameLowerCase);
       this.imageUrl =
         responsePokemonCardList.sprites.other.dream_world.front_default;
       this.textImage = `Card of ${this.pokemonName}, number ${this.id}`;
@@ -50,13 +47,17 @@ class Card extends Component {
                     <img src="${this.imageUrl}" alt="${this.textImage}"/>
                   </section>
                   <button class=".button">
-                    <img src="/public/image/pokeball.png" alt="pokeball" />
+                    <img src="/public/image/pokeball 70px.png" alt="pokeball" />
                     CATCH POKEMON
                   </button>
                 </div>`;
 
     this.element.innerHTML = cardHtml;
   }
+}
+
+function UperCaseFirstLetter(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 export default Card;

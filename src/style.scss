@@ -14,20 +14,32 @@ body {
   header {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 15px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 
     img {
       height: 50px;
       width: auto;
+      cursor: pointer;
     }
   }
   nav {
-    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
   }
   .navigator {
     list-style: none;
-    display: flex;
-    height: 70px;
     color: white;
+    display: flex;
+  }
+  .universo {
+    margin: 0 10px;
+    cursor: pointer;
+    height: 20px;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
   }
   .list-cards {
     list-style: none;
@@ -116,6 +128,17 @@ body {
       font-size: 18px;
       background-color: rgb(240, 240, 240);
       box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: rgb(21, 89, 154);
+        color: white;
+        justify-content: right;
+        img {
+          width: 70px;
+          position: absolute;
+          left: 10px;
+        }
+      }
 
       img {
         width: 35px;
