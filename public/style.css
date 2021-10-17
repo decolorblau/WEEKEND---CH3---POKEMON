@@ -87,17 +87,19 @@ body {
   margin: 10px 0;
   background-color: #f0f0f0;
   width: 100%;
-  height: 260px;
+  height: 100%;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .card img {
-  height: 90%;
-  width: auto;
+.container .card__image img {
+  width: 260px;
 }
-.container .card .button {
+.container .card img {
+  height: 240px;
+}
+.container .card button {
   margin: 10px;
   padding: 0 20px;
   width: 100%;
@@ -114,7 +116,7 @@ body {
   background-color: #f0f0f0;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-.container .card .button img {
+.container .card button img {
   width: 35px;
   height: auto;
 }
