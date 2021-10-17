@@ -1,26 +1,30 @@
 import Card from "./Card.js";
 import Component from "./Component.js";
-import PokemonService from "./PokemonServices.js";
 import GetServices from "./PokemonServices.js";
 
 class Page extends Component {
   parentElement;
+  urlApi;
   pokemonsResults;
-  constructor(parentElement) {
-    debugger;
+  constructor(parentElement, urlApi) {
     super(parentElement, "container");
-
+    this.urlApi = urlApi;
     this.generatePageHtml();
 
-    const pokemonsPage = (async () => {
+    (async () => {
       const pokemonList = new GetServices();
-      const responsePokemonList = await pokemonList.getPokemons();
+      const responsePokemonList = await pokemonList.getPokemons(this.urlApi);
       this.pokemonsResults = responsePokemonList.results;
-      console.log(pokemonsPage);
 
       const cardParent = document.querySelector(".list-cards");
 
-      let cards = this.pokemonsResults.map((pokemon) => new Card(cardParent));
+      this.pokemonsResults.map(async (pokemon) => {
+        await new Card(cardParent, pokemon.url);
+      });
+
+      /*   const newCards = () => {
+        new Card(cardParent, this.pokemonsResults.url);
+      }; */
     })();
 
     //let cards = pokemonsPage.map();
