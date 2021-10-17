@@ -41,12 +41,32 @@ body {
       border-bottom: 1px solid white;
     }
   }
+  .button-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px 0;
+    font-size: 15px;
+    color: rgb(160, 160, 160);
+
+    button {
+      background-color: transparent;
+      border: none;
+      margin: 0 5px;
+      font-size: 15px;
+      font-weight: 500;
+      color: rgb(160, 160, 160);
+      cursor: pointer;
+      &:hover {
+        color: rgb(95, 95, 95);
+      }
+    }
+  }
   .list-cards {
     list-style: none;
     padding: 30px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(240, 240, 240);
     display: flex;
-    margin: 30px auto 70px;
+    margin: 10px auto 70px;
     border-radius: 50px;
     flex-wrap: wrap;
     align-content: space-around;
