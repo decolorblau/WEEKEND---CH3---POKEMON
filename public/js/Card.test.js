@@ -1,6 +1,7 @@
-const { default: Component } = require("./Component");
+const { describe } = require("yargs");
+const { default: Card } = require("./Card");
 
-describe("Given a component constructor", () => {
+describe("Given a Card component constructor", () => {
   describe("When it receives a div container, a 'test-Component' class and a 'span' tag", () => {
     test("then it should render a span element with a 'test-Component'class inside de div container", () => {
       //arrange
