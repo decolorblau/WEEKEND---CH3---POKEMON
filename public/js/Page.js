@@ -33,19 +33,23 @@ class Page extends Component {
   generatePageHtml() {
     const pageHtml = `      
       <header>
-        <img src="/public/image/pokemon-logo.svg" alt="pokemon logo" />
+        <div>
+          <img src="/public/image/pokemon-logo.svg" alt="pokemon logo" />
+        </div>
+        <nav>
+          <ul class="navigator">
+            <li class="universo">Pokédex</li>
+            <li class="universo">My Pokemon Family</li>
+          </ul>
+        </nav>
       </header>
-      <nav>
-        <ul class="navigator">
-          <li class="universo">Pokédex</li>
-          <li class="universo">My Pokemon Family</li>
-        </ul>
-      </nav>
+
       <main>
         <div>
-          <div class="search">
-            <input type="text" class="search__text" />
-            <button type="submit" class="search__button">search</button>
+          <div class="button-page">
+            <button type="submit" class="button-page__all">All</button>
+            <button type="submit" class="button-page__before"><</button>
+            <button type="submit" class="button-page__next">></button>
           </div>
           <div class="list">
             <ul class="list-cards">
