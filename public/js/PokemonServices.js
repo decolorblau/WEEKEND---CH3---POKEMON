@@ -1,8 +1,8 @@
-class PokemonServices {
-  urlApi;
+class GetServices {
+  offset = 0;
 
-  constructor(urlApi) {
-    this.urlApi = urlApi;
+  constructor(offset) {
+    this.urlApi = `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`;
   }
 
   async getPokemons() {
@@ -12,4 +12,12 @@ class PokemonServices {
   }
 }
 
-export default PokemonService;
+/* class PokemonServices extends GetServices { 
+  offset = 0;
+
+  constructor (offset){
+    super(`https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`)
+  }
+}
+ */
+export default GetServices;

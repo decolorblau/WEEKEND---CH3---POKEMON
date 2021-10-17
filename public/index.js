@@ -1,5 +1,7 @@
-const { default: Card } = require("./js/Card");
+import Page from "./js/Page.js";
 
-const blue = new Card ({ id:01, name:"bulbasur", imageUrl:"urlfafda"}, "div")
+//const blue = new Card ({ id:01, name:"bulbasur", imageUrl:"urlfafda"}, "div")
 
-console.log (blue)
+const body = document.querySelector("body");
+
+new Page(body);

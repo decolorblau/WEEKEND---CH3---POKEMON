@@ -1,21 +1,27 @@
 import Component from "./Component.js";
+import PokemonServices from "./PokemonServices.js";
 
 class Card extends Component {
-
+  urlPokemon;
+  pokemon = {};
   textImage;
+  name;
+  imageUrl;
+  id;
 
-  constructor({id, name, imageUrl}, parentElement){
-    super(this.parentElement, "list-cards__unit", "li")
-      this.textImage = `Card of ${name}, number ${id}`
+  constructor(parentElement, urlPokemon) {
+    super(parentElement, "list-cards__unit", "li");
+    this.url;
+    this.textImage = `Card of ${name}, number ${id}`;
 
-    this.generateHtml()
+    this.generateHtml();
   }
 
-  generateHtml(title, name, imageUrl,textImage){
-   const cardHtml= ` <div class="card">
+  generateHtml(name, imageUrl, textImage) {
+    const cardHtml = ` <div class="card">
                   <section class="card__header">
                     <div class="card__id">
-                      <span>${id}</span>
+                      <span>Nº ${id}</span>
                     </div>
                     <div class="card__name">
                       <p>${name}</p>
@@ -25,15 +31,13 @@ class Card extends Component {
                     <img src="${imageUrl}" alt="${textImage}"/>
                   </section>
                   <button>
-                    <img src="/public/image/pokeball.svg" alt="pokeball" />
+                    <img src="/public/image/pokeball.png" alt="pokeball" />
                     CATCH POKEMON
                   </button>
-                </div>`
+                </div>`;
 
-    this.element.innerHTML = cardHtml
+    this.element.innerHTML = cardHtml;
   }
-
 }
-
 
 export default Card;
