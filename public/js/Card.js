@@ -27,7 +27,7 @@ class Card extends Component {
 
       this.pokemonName = UperCaseFirstLetter(nameLowerCase);
       this.imageUrl =
-        responsePokemonCardList.sprites.other.dream_world.front_default;
+        responsePokemonCardList.sprites.other["official-artwork"].front_default;
       this.textImage = `Card of ${this.pokemonName}, number ${this.id}`;
 
       this.generateHtml();
@@ -47,7 +47,7 @@ class Card extends Component {
                     <img src="${this.imageUrl}" alt="${this.textImage}"/>
                   </section>
                   <button class=".button">
-                    <img src="/public/image/pokeball 70px.png" alt="pokeball" />
+                    <img src="./image/pokeball 70px.png" alt="pokeball" />
                     CATCH POKEMON
                   </button>
                 </div>`;
