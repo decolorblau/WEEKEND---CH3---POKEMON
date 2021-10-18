@@ -79,7 +79,8 @@ class Page extends Component {
     }
 
     function all() {
-      fisrt = 0;
+      first = 0;
+      offset = 0;
       last = 898;
       body.removeChild(document.querySelector(".container"));
       new Page(body, `https://pokeapi.co/api/v2/pokemon?limit=898&offset=0`);
