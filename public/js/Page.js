@@ -114,7 +114,7 @@ class Page extends Component {
     const pageHtml = `      
       <header>
         <div class="h1">
-          <img src="/public/image/pokemon-logo.svg" alt="pokemon logo" />
+          <img src="./image/pokemon-logo.svg" alt="pokemon logo" />
         </div>
         <nav>
           <ul class="navigator">
