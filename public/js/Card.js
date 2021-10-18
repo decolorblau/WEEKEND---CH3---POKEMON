@@ -47,7 +47,7 @@ class Card extends Component {
                     <img src="${this.imageUrl}" alt="${this.textImage}"/>
                   </section>
                   <button class=".button">
-                    <img src="/public/image/pokeball 70px.png" alt="pokeball" />
+                    <img src="./image/pokeball 70px.png" alt="pokeball" />
                     CATCH POKEMON
                   </button>
                 </div>`;
